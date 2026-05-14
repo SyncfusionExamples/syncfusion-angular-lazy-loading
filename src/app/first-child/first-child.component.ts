@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
   selector: 'app-first-child',
+  standalone: true,
+  imports: [CalendarModule],
   template: `<ejs-calendar [value]='dateValue' [min]='minDate' [max]='maxDate'></ejs-calendar>`,
   styleUrls: ['./first-child.component.css']
 })
